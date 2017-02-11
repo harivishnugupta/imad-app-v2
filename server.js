@@ -23,21 +23,23 @@ var ArticleOne ={
             <head>
                  ${title}
             </head>
-            <div class="container">
-                <div>
-                <a href='/'>Home</a>
+            <body>
+                <div class="container">
+                    <div>
+                    <a href='/'>Home</a>
+                    </div>
+                    <hr/>
+                    <h1>
+                         ${heading}
+                    </h1>
+                    <div>
+                         ${date}
+                    </div>
+                    <div>
+                         ${content}
+                    </div>
                 </div>
-                <hr/>
-                <h1>
-                     ${heading}
-                </h1>
-                <div>
-                     ${date}
-                </div>
-                <div>
-                     ${content}
-                </div>
-            </div>    
+            </body>    
         </html>
         `;
         return HtmlTemplate;
