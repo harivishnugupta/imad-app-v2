@@ -23,7 +23,7 @@ var ArticleOne ={
             <head>
                  ${title}
             </head>
-            <div> class="container"
+            <div class="container">
                 <div>
                 <a href='/'>Home</a>
                 </div>
