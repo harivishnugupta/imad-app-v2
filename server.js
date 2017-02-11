@@ -22,6 +22,7 @@ var ArticleOne ={
         <html>
             <head>
                  ${title}
+                     <link href="/ui/style.css" rel="stylesheet" />
             </head>
             <body>
                 <div class="container">
