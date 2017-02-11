@@ -20,7 +20,7 @@ var Articles={
     },
     ArticleThree :{
         title:'ArticleThree',
-        heading:'will see the comtent of article Three',
+        heading:'will see the content of article Three',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article three oda content ah padeenga</p>'
     }
