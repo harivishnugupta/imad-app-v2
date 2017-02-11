@@ -6,19 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 
 var Articles={ 
-    articleOne :{
+    ArticleOne :{
         title:'ArticleOne',
         heading:'will see the comtent of artical one',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article one oda content ah padeenga</p>'
     };
-    articleTwo :{
+    ArticleTwo :{
         title:'ArticleTwo',
         heading:'will see the content of article Two',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article Two oda content ah padeenga</p>'
     };
-    articleThree :{
+    ArticleThree :{
         title:'ArticleThree',
         heading:'will see the comtent of article Three',
         date:'feb-11,2017',
@@ -64,6 +64,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:occurence', function (req, res) {
+    var occurence=req.params.occurence;
   res.send(CreateTemplate(Articles[occurence]));
 });
 
