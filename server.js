@@ -11,20 +11,20 @@ var Articles={
         heading:'will see the comtent of artical one',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article one oda content ah padeenga</p>'
-    };
-    ArticleTwo :{
+    },
+    'ArticleTwo' :{
         title:'ArticleTwo',
         heading:'will see the content of article Two',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article Two oda content ah padeenga</p>'
-    };
-    ArticleThree :{
+    },
+    'ArticleThree' :{
         title:'ArticleThree',
         heading:'will see the comtent of article Three',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article three oda content ah padeenga</p>'
-    };
-}
+    }
+};
     function CreateTemplate(data)
     {
         var title = data.title;
