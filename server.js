@@ -6,19 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 
 var Articles={ 
-    ArticleOne :{
+    articleOne :{
         title:'ArticleOne',
         heading:'will see the comtent of artical one',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article one oda content ah padeenga</p>'
     };
-    ArticleTwo :{
+    articleTwo :{
         title:'ArticleTwo',
         heading:'will see the content of article Two',
         date:'feb-11,2017',
         content:'<p>wanga, wandhu article Two oda content ah padeenga</p>'
     };
-    ArticleThree :{
+    articleThree :{
         title:'ArticleThree',
         heading:'will see the comtent of article Three',
         date:'feb-11,2017',
