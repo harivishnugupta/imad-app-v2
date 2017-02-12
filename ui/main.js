@@ -3,7 +3,7 @@ var change= document.getElementById('details');
 change.innerHTML = 'changed value';
 var moving = document.getElementById('toypic');
 var marginLeft=0;
-var movingright= function()
+function movingright()
 {
     marginLeft = marginLeft = 10;
     movingright.style.marginLeft = marginLeft + 'px';
