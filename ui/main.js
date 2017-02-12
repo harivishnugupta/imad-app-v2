@@ -2,6 +2,7 @@ console.log('Loaded!');
 var change= document.getElementById('details');
 change.innerHTML = 'changed value';
 var moving = document.getElementById('toypic');
+var marginLeft=0;
 var movingright= function()
 {
     marginLeft = marginLeft = 10;
