@@ -4,6 +4,5 @@ change.innerHTML = 'changed value';
 var moving = document.getElementById('toypic');
 moving.onclick = function()
 {
-    leftmargin = leftmargin + 5;
-    leftmargin = leftmargin + px;
-};
+    moving.style.marginLeft = '200px';
+ };
