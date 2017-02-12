@@ -10,5 +10,5 @@ function movingright()
 }
 moving.onclick = function()
 {
-    var interval = setInterval(movingright,50);
+    var interval = setInterval(movingright, 50);
  };
