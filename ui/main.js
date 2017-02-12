@@ -2,7 +2,12 @@ console.log('Loaded!');
 var change= document.getElementById('details');
 change.innerHTML = 'changed value';
 var moving = document.getElementById('toypic');
+movingright()
+{
+    marginLeft = marginLeft = 10;
+    movingright.style.marginLeft = marginLeft + 'px';
+}
 moving.onclick = function()
 {
-    moving.style.marginLeft = '200px';
+    var interval = SetInterval(movingright,100);
  };
