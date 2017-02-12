@@ -3,12 +3,12 @@ var change= document.getElementById('details');
 change.innerHTML = 'changed value';
 var moving = document.getElementById('toypic');
 var marginLeft=0;
-function movingright()
+function movingRight()
 {
-    marginLeft = marginLeft = 10;
+    marginLeft = marginLeft + 10;
     moving.style.marginLeft = marginLeft + 'px';
 }
 moving.onclick = function()
 {
-    var interval = setInterval(movingright, 50);
+    var interval = setInterval(movingRight, 50);
  };
