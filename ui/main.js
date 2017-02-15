@@ -12,10 +12,12 @@ moving.onclick = function()
 {
     var interval = setInterval(movingRight, 50);
  };
-var counter=document.getElementById('count');
-counter.onclick = function()
+ var counting=0;
+var button=document.getElementById('counter');
+button.onclick = function()
 {
-  var counting=0;
+  
      counting+=1;
-     return counting;  
+     var span = document.getElementById('count');
+     span.innerHTML = counting.toString();
 }
