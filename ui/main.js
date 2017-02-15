@@ -1,23 +1,21 @@
-console.log('Loaded!');
-var change= document.getElementById('details');
-change.innerHTML = 'changed value';
-var moving = document.getElementById('toypic');
-var marginLeft=0;
-function movingRight()
-{
-    marginLeft = marginLeft + 10;
-    moving.style.marginLeft = marginLeft + 'px';
-}
-moving.onclick = function()
-{
-    var interval = setInterval(movingRight, 50);
- };
- var counting=0;
+
 var button=document.getElementById('counter');
 button.onclick = function()
 {
-  
-     counting+=1;
+    
+var request= new XMLHttprequest();
+request.open('GET', 'http://harivishnugupta.imad.hasura-app.io/' , true);
+request.send(null);
+
+    request.onreadystatechange = fuction()
+    {
+        if (request.readystate === XMLHttprequest.DONE)
+        if(request.status === 200)
+        {
+    var counting=0;
+    counting+=1;
      var span = document.getElementById('count');
-     span.innerHTML = counting.toString();
+     span.innerHTML = counting.toString();  
+    }
+    }
 }
