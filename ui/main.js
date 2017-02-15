@@ -12,3 +12,10 @@ moving.onclick = function()
 {
     var interval = setInterval(movingRight, 50);
  };
+var counter=document.getElementById('count');
+function counter()
+{
+     var counting=0;
+     counting+=1;
+     return counting;
+}
