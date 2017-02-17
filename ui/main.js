@@ -10,7 +10,7 @@ request.send(null);
     request.onreadystatechange = fuction()
     {
         if (request.readystate === XMLHttprequest.DONE)
-        if(request.status === 200)
+        if(requestStatus === 200)
         {
     var counting=0;
     counting+=1;
