@@ -3,19 +3,21 @@ var button=document.getElementById('counter');
 button.onclick = function()
 {
     
-var request= new XMLHttprequest();
-request.open('GET', 'http://harivishnugupta.imad.hasura-app.io/' , true);
-request.send(null);
+var request= new XMLHttpRequest();
+
 
     request.onreadystatechange = fuction()
     {
-        if (request.readystate === XMLHttprequest.DONE)
-        if(requestStatus === 200)
+        if (request.readystate === XMLHttpRequest.DONE)
         {
-    var counting=0;
-    counting+=1;
+        if(request.status === 200)
+        {
+     var counting = request.responseText;
      var span = document.getElementById('count');
      span.innerHTML = counting.toString();  
     }
     }
-}
+    }
+    request.open('GET', 'http://harivishnugupta.imad.hasura-app.io/' , true);
+    request.send(null);
+};
